@@ -2,3 +2,6 @@ Running: xsim.dir/arbiter_structural_3cons_tb_behav/xsimk.exe -simmode gui -wdb 
 Design successfully loaded
 Design Loading Memory Usage: 20268 KB (Peak: 20268 KB)
 Design Loading CPU Usage: 311 ms
+Simulation completed
+Simulation Memory Usage: 20616 KB (Peak: 20616 KB)
+Simulation CPU Usage: 327 ms

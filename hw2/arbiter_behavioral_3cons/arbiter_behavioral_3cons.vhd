@@ -31,7 +31,8 @@ ENTITY arbiter_behavioral_3cons IS
         clk    :  IN    std_logic;
         rst    :  IN    std_logic;
         ACK_1  :  OUT   std_logic;
-        ACK_2  :  OUT   std_logic
+        ACK_2  :  OUT   std_logic;
+        ACK_3  :  OUT   std_logic
 	);
 END arbiter_behavioral_3cons;
 
@@ -117,15 +118,19 @@ BEGIN
         WHEN Con_01 =>
             ACK_1 <= '1';
             ACK_2 <= '0';
+            ACK_3 <= '0';
         WHEN Con_02 =>
-            ACK_1 <= '1';
-            ACK_2 <= '1';
-        WHEN Con_03 =>
             ACK_1 <= '0';
             ACK_2 <= '1';
+            ACK_3 <= '0';
+        WHEN Con_03 =>
+            ACK_1 <= '0';
+            ACK_2 <= '0';
+            ACK_3 <= '1';
         WHEN OTHERS =>
             ACK_1 <= '0';
             ACK_2 <= '0';
+            ACK_3 <= '0';
         END CASE;
     END PROCESS output_logic;
 END behavioral_3cons;
