@@ -1,7 +1,7 @@
 Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
 -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
-| Date         : Wed Sep 30 14:27:06 2015
+| Date         : Wed Sep 30 21:00:20 2015
 | Host         : dustin-asus running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -warn_on_violation -max_paths 10 -file arbiter_structural_3cons_timing_summary_routed.rpt -rpx arbiter_structural_3cons_timing_summary_routed.rpx
 | Design       : arbiter_structural_3cons

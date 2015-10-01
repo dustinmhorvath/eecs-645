@@ -59,8 +59,17 @@ begin
     -- state logic
     ----------------------------------
 
-    s1_next <= ((s1_current and s2_current and REQ_2) or (s1_current and (not s2_current) and REQ_1 and REQ_3) or ((not s2_current) and REQ_1 and REQ_3) or ((not s2_current) and REQ_1 and (not REQ_2) and (not REQ_3)) or ((not s1_current) and (not s2_current) and (not REQ_1) and REQ_2 and (not REQ_3)));
-    s2_next <= (((not s1_current) and (not REQ_1) and (not REQ_2) and REQ_3) or (s1_current and s2_current and REQ_2) or (s2_current and REQ_1 and REQ_2 and REQ_3) or ((not s1_current) and (not s2_current) and (not REQ_1) and REQ_2 and (not REQ_3)));
+    s1_next <= (    (s1_current and s2_current and REQ_2) or 
+                    (s1_current and (not s2_current) and REQ_1) or 
+                    ((not s2_current) and REQ_1 and (not REQ_2) and (not REQ_3)) or 
+                    ((not s1_current) and (not s2_current) and (not REQ_1) and REQ_2 and (not REQ_3))
+                    );
+    s2_next <= (    ((not s1_current) and (not REQ_1) and (not REQ_2) and REQ_3) or
+                    (s2_current and (not REQ_1) and REQ_2 and REQ_3) or
+                    (s1_current and s2_current and REQ_2) or
+                    ((not s1_current) and s2_current and REQ_1 and REQ_3) or
+                    ((not s1_current) and (not s2_current) and (not REQ_1) and REQ_2 and (not REQ_3))
+                    );
 
     ----------------------------------
     -- output logic
