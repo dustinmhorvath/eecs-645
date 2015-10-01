@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Sep 30 22:09:13 2015
+# Process ID: 2244
+# Log file: C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_2cons_highPri/arbiter_behavioral_2cons_highPri.runs/impl_1/arbiter_behavioral_2cons_highPri.vdi
+# Journal file: C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_2cons_highPri/arbiter_behavioral_2cons_highPri.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source arbiter_behavioral_2cons_highPri.tcl -notrace

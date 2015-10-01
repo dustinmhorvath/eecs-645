@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_2cons_highPri/arbiter_behavioral_2cons_highPri.srcs/sources_1/new/arbiter_behavioral_2cons_highPri.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity arbiter_behavioral_2cons_highPri
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_2cons_highPri/arbiter_behavioral_2cons_highPri_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity arbiter_behavioral_2cons_highPri_tb
