@@ -1,0 +1,7 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_structural_2cons_highPri/arbiter_structural_2cons_highPri.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity arbiter_structural_2cons_highPri
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_structural_2cons_highPri/arbiter_structural_2cons_highPri_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity arbiter_structural_2cons_highPri_tb
+ERROR: [VRFC 10-91] arbiter_structural_2cons_highpri is not declared [C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_structural_2cons_highPri/arbiter_structural_2cons_highPri_tb.vhd:67]
+ERROR: [VRFC 10-1504] unit behavior ignored due to previous errors [C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_structural_2cons_highPri/arbiter_structural_2cons_highPri_tb.vhd:40]
+INFO: [VRFC 10-240] VHDL file C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_structural_2cons_highPri/arbiter_structural_2cons_highPri_tb.vhd ignored due to errors

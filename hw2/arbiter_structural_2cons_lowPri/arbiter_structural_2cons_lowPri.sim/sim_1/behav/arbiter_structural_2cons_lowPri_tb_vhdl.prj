@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../arbiter_structural_2cons_lowPri.vhd"
+vhdl xil_defaultlib  "../../../arbiter_structural_2cons_lowPri.srcs/sim_1/new/arbiter_structural_2cons_lowPri_tb.vhd"
+
+# Do not sort compile order
+nosort

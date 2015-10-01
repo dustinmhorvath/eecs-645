@@ -1,0 +1,4 @@
+Running: xsim.dir/arbiter_structural_2cons_lowPri_tb_behav/xsimk.exe -simmode gui -wdb arbiter_structural_2cons_lowPri_tb_behav.wdb -simrunnum 0 -socket 50080
+Design successfully loaded
+Design Loading Memory Usage: 19804 KB (Peak: 19804 KB)
+Design Loading CPU Usage: 203 ms

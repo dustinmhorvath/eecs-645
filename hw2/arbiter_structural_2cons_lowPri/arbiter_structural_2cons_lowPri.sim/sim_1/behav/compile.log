@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_structural_2cons_lowPri/arbiter_structural_2cons_lowPri.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity arbiter_structural_2cons_lowPri
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_structural_2cons_lowPri/arbiter_structural_2cons_lowPri.srcs/sim_1/new/arbiter_structural_2cons_lowPri_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity arbiter_structural_2cons_lowPri_tb
