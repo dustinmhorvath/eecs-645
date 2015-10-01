@@ -1,20 +1,19 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: University of Kansas
+-- Engineer: Dustin Horvath
 -- 
--- Create Date: 09/30/2015 03:09:11 PM
--- Design Name: 
--- Module Name: arbiter_structural_2cons_highPriv_tb - Structural
--- Project Name: 
+-- Create Date: 09/28/2015 09:08:39 PM
+-- Design Name: arbiter_behavioral_2cons_highPri_tb
+-- Module Name: arbiter_behavioral_2cons_highPri_tb - Behavioral
+-- Project Name: EECS645 Homework 2
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
 -- 
 -- Dependencies: 
 -- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
+-- Revision: See latest git commit at http://git.nichnologist.net/dhorvath/eecs/tree/master/eecs645/hw2
+-- Additional Comments: None
 -- 
 ----------------------------------------------------------------------------------
 
@@ -29,16 +28,18 @@ END arbiter_behavioral_2cons_highPri_tb;
 ARCHITECTURE behavior OF arbiter_behavioral_2cons_highPri_tb IS
 
     COMPONENT arbiter_behavioral_2cons_highPri
-     PORT(
-        REQ_1  : IN     std_logic;
-        REQ_2  : IN     std_logic;
-        clk    : IN     std_logic;
-        rst    : IN     std_logic;
-        ACK_1  : OUT    std_logic;
-        ACK_2  : OUT    std_logic
-    );
+        -- Define toplevel I/O
+        PORT(
+            REQ_1  : IN     std_logic;
+            REQ_2  : IN     std_logic;
+            clk    : IN     std_logic;
+            rst    : IN     std_logic;
+            ACK_1  : OUT    std_logic;
+            ACK_2  : OUT    std_logic
+        );
     END COMPONENT;
-    
+
+    -- Define interim signals
     signal REQ_1  :  std_logic  := '0';
     signal REQ_2  :  std_logic  := '0';
     signal clk    :  std_logic  := '0';
@@ -53,6 +54,7 @@ ARCHITECTURE behavior OF arbiter_behavioral_2cons_highPri_tb IS
 BEGIN
 
     -- Unit Under Test
+    -- Map elements of simulation to elements of UUT
     uut: arbiter_behavioral_2cons_highPri PORT MAP(
                     REQ_1 => REQ_1,
                     REQ_2 => REQ_2,

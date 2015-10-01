@@ -47,7 +47,8 @@ ARCHITECTURE behavior OF arbiter_structural_3cons_tb IS
         clk    : IN     std_logic;
         rst    : IN     std_logic;
         ACK_1  : OUT    std_logic;
-        ACK_2  : OUT    std_logic
+        ACK_2  : OUT    std_logic;
+        ACK_3  : OUT    std_logic
     );
     END COMPONENT;
     
@@ -60,7 +61,7 @@ ARCHITECTURE behavior OF arbiter_structural_3cons_tb IS
     
     signal ACK_1  :  std_logic;
     signal ACK_2  :  std_logic;
-    
+    signal ACK_3  :  std_logic;
     constant clk_period  :  time  := 10 ns;
     
 BEGIN
@@ -73,7 +74,8 @@ BEGIN
                     clk => clk,
                     rst => rst,
                     ACK_1 => ACK_1,
-                    ACK_2 => ACK_2
+                    ACK_2 => ACK_2,
+                    ACK_3 => ACK_3
                 );
     
     clk_process :process

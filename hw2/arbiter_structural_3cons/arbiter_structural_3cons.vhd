@@ -31,7 +31,8 @@ entity arbiter_structural_3cons is
         clk   : IN      STD_LOGIC;
         rst   : IN      STD_LOGIC;
         ACK_1 : OUT     STD_LOGIC;
-        ACK_2 : OUT     STD_LOGIC
+        ACK_2 : OUT     STD_LOGIC;
+        ACK_3 : OUT     STD_LOGIC
     );
 end arbiter_structural_3cons;
 
@@ -75,7 +76,8 @@ begin
     -- output logic
     ----------------------------------
 
-    ACK_1 <= s1_current;
-    ACK_2 <= s2_current;
+    ACK_1 <= s1_current and (not s2_current);
+    ACK_2 <= s1_current and s2_current;
+    ACK_3 <= (not s1_current) and s2_current;
 
 end struct_no_priority;

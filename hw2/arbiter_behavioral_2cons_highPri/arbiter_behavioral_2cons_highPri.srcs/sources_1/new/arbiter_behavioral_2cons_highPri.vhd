@@ -1,20 +1,19 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: University of Kansas
+-- Engineer: Dustin Horvath
 -- 
--- Create Date: 09/30/2015 09:25:35 PM
--- Design Name: 
+-- Create Date: 09/28/2015 09:08:39 PM
+-- Design Name: arbiter_behavioral_2cons_highPri
 -- Module Name: arbiter_behavioral_2cons_highPri - Behavioral
--- Project Name: 
+-- Project Name: EECS645 Homework 2
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
 -- 
 -- Dependencies: 
 -- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
+-- Revision: See latest git commit at http://git.nichnologist.net/dhorvath/eecs/tree/master/eecs645/hw2
+-- Additional Comments: None
 -- 
 ----------------------------------------------------------------------------------
 
@@ -24,6 +23,7 @@ USE ieee.std_logic_1164.all;
 USE ieee.std_logic_unsigned.all;
 
 ENTITY arbiter_behavioral_2cons_highPri IS
+    -- Define toplevel I/O
     PORT(
         REQ_1  :  IN    std_logic;
         REQ_2  :  IN    std_logic;
@@ -36,6 +36,7 @@ END arbiter_behavioral_2cons_highPri;
 
 ARCHITECTURE behavioral_highPri OF arbiter_behavioral_2cons_highPri IS
 
+    -- Alias STATE_TYPE is 2 bit vector
 	SUBTYPE STATE_TYPE IS
 		std_logic_vector (1 DOWNTO 0);
 	
@@ -55,10 +56,8 @@ BEGIN
 
     REQ_VEC <= (REQ_1 & REQ_2);
     
-    ---------------------------------
-    -- Memory elements defined
-    ---------------------------------
-	
+
+    -- Define memory elements and state cycle behavior
 	memory_elements  :  PROCESS(clk, rst)
 	BEGIN
         IF (rst = '1') THEN
@@ -68,10 +67,7 @@ BEGIN
         END IF;
     END PROCESS memory_elements;
     
-    ---------------------------------
-    -- State logic defined
-    ---------------------------------
-    
+    -- Define next state logic
     state_logic  :  PROCESS (REQ_VEC, current_state)
     BEGIN
         CASE current_state IS
@@ -101,10 +97,7 @@ BEGIN
         END CASE;
     END PROCESS state_logic;
     
-    ---------------------------------
     -- Define output logic
-    ---------------------------------
-    
     output_logic  :  PROCESS (current_state)
     BEGIN
         CASE current_state IS

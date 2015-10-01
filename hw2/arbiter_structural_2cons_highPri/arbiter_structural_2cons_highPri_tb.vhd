@@ -1,20 +1,19 @@
 ----------------------------------------------------------------------------------
--- Company: 
--- Engineer: 
+-- Company: University of Kansas
+-- Engineer: Dustin Horvath
 -- 
--- Create Date: 09/30/2015 03:09:11 PM
--- Design Name: 
--- Module Name: arbiter_structural_2cons_highPriv_tb - Structural
--- Project Name: 
+-- Create Date: 09/28/2015 09:08:39 PM
+-- Design Name: arbiter_structural_2cons_highPri_tb
+-- Module Name: arbiter_structural_2cons_highPri_tb - Structural
+-- Project Name: EECS645 Homework 2
 -- Target Devices: 
 -- Tool Versions: 
 -- Description: 
 -- 
 -- Dependencies: 
 -- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
+-- Revision: See latest git commit at http://git.nichnologist.net/dhorvath/eecs/tree/master/eecs645/hw2
+-- Additional Comments: None
 -- 
 ----------------------------------------------------------------------------------
 
@@ -34,11 +33,14 @@ use IEEE.STD_LOGIC_1164.ALL;
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 
+-- Define toplevel I/O (empty)
 ENTITY arbiter_structural_2cons_highPri_tb IS
 END arbiter_structural_2cons_highPri_tb;
 
+
 ARCHITECTURE behavior OF arbiter_structural_2cons_highPri_tb IS
 
+    -- Define ports of simulation design
     COMPONENT arbiter_structural_2cons_highPri
         PORT(
             REQ_1  : IN     std_logic;
@@ -49,7 +51,8 @@ ARCHITECTURE behavior OF arbiter_structural_2cons_highPri_tb IS
             ACK_2  : OUT    std_logic
         );
     END COMPONENT;
-    
+
+    -- Define interim signals    
     signal REQ_1  :  std_logic  := '0';
     signal REQ_2  :  std_logic  := '0';
     signal clk    :  std_logic  := '0';
@@ -64,6 +67,7 @@ ARCHITECTURE behavior OF arbiter_structural_2cons_highPri_tb IS
 BEGIN
 
     -- Unit Under Test
+    -- Map elements of simulation to elements of UUT.
     uut: arbiter_structural_2cons_highPri PORT MAP(
                     REQ_1 => REQ_1,
                     REQ_2 => REQ_2,
@@ -72,7 +76,8 @@ BEGIN
                     ACK_1 => ACK_1,
                     ACK_2 => ACK_2
                 );
-    
+
+    -- Define clock behavior    
     clk_process :process
     begin
             clk <= '0';
@@ -81,7 +86,7 @@ BEGIN
             wait for clk_period/2;
     end process;
     
-    
+    -- Define simulation process
     stim_proc: process
     begin
             rst <= '1';
