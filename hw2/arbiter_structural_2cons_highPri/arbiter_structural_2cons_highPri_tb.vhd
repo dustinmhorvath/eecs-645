@@ -4,7 +4,7 @@
 -- 
 -- Create Date: 09/30/2015 03:09:11 PM
 -- Design Name: 
--- Module Name: arbiter_structural_2cons_lowPriv_tb - Structural
+-- Module Name: arbiter_structural_2cons_highPriv_tb - Structural
 -- Project Name: 
 -- Target Devices: 
 -- Tool Versions: 
@@ -39,7 +39,7 @@ END arbiter_structural_2cons_highPri_tb;
 
 ARCHITECTURE behavior OF arbiter_structural_2cons_highPri_tb IS
 
-    COMPONENT arbiter_structural_2cons_lowPri
+    COMPONENT arbiter_structural_2cons_highPri
      PORT(
         REQ_1  : IN     std_logic;
         REQ_2  : IN     std_logic;
