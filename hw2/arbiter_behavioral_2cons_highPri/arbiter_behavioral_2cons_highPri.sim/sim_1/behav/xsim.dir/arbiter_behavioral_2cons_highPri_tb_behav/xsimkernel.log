@@ -2,3 +2,6 @@ Running: xsim.dir/arbiter_behavioral_2cons_highPri_tb_behav/xsimk.exe -simmode g
 Design successfully loaded
 Design Loading Memory Usage: 20064 KB (Peak: 20064 KB)
 Design Loading CPU Usage: 155 ms
+Simulation completed
+Simulation Memory Usage: 20408 KB (Peak: 20408 KB)
+Simulation CPU Usage: 202 ms

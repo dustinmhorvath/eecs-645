@@ -1,0 +1,13 @@
+
+****** Webtalk v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_2cons_lowPri/arbiter_behavioral_2cons_lowPri.hw/webtalk/labtool_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 61.242 ; gain = 0.008
+
+    while executing
+"webtalk_transmit -clientid 2467623509 -regid "" -xml C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_2cons_lowPri/arbiter_behavioral_2cons_l..."
+    (file "C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_2cons_lowPri/arbiter_behavioral_2cons_lowPri.hw/webtalk/labtool_webtalk.tcl" line 26)
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 01 10:17:24 2015...

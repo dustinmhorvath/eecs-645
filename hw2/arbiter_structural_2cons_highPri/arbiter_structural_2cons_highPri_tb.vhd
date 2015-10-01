@@ -40,14 +40,14 @@ END arbiter_structural_2cons_highPri_tb;
 ARCHITECTURE behavior OF arbiter_structural_2cons_highPri_tb IS
 
     COMPONENT arbiter_structural_2cons_highPri
-     PORT(
-        REQ_1  : IN     std_logic;
-        REQ_2  : IN     std_logic;
-        clk    : IN     std_logic;
-        rst    : IN     std_logic;
-        ACK_1  : OUT    std_logic;
-        ACK_2  : OUT    std_logic
-    );
+        PORT(
+            REQ_1  : IN     std_logic;
+            REQ_2  : IN     std_logic;
+            clk    : IN     std_logic;
+            rst    : IN     std_logic;
+            ACK_1  : OUT    std_logic;
+            ACK_2  : OUT    std_logic
+        );
     END COMPONENT;
     
     signal REQ_1  :  std_logic  := '0';
