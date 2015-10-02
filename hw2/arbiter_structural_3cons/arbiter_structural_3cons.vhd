@@ -6,12 +6,6 @@
 -- Design Name: 
 -- Module Name: arbiter_structural_3cons - Structural
 -- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
 -- Revision:
 -- Revision 0.01 - File Created
 -- Additional Comments:
@@ -24,6 +18,7 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.STD_LOGIC_UNSIGNED.ALL;
 
 entity arbiter_structural_3cons is
+    -- Define toplevel IO
     PORT(
         REQ_1 : IN      STD_LOGIC;
         REQ_2 : IN      STD_LOGIC;
@@ -41,9 +36,8 @@ architecture struct_no_priority of arbiter_structural_3cons is
     SIGNAL s1_next    , s2_next     :  std_logic;
 
 begin
-    ----------------------------------
-    -- memory elements
-    ----------------------------------
+
+    -- Define memory elements
     memory_elements : PROCESS(clk, rst)
     
     BEGIN
@@ -56,10 +50,7 @@ begin
         END IF;
     END PROCESS memory_elements;
 
-    ----------------------------------
-    -- state logic
-    ----------------------------------
-
+    -- Define state logic
     s1_next <= (    (s1_current and s2_current and REQ_2) or 
                     (s1_current and (not s2_current) and REQ_1) or 
                     ((not s2_current) and REQ_1 and (not REQ_2) and (not REQ_3)) or 
@@ -72,10 +63,7 @@ begin
                     ((not s1_current) and (not s2_current) and (not REQ_1) and REQ_2 and (not REQ_3))
                     );
 
-    ----------------------------------
-    -- output logic
-    ----------------------------------
-
+    -- Define output logic
     ACK_1 <= s1_current and (not s2_current);
     ACK_2 <= s1_current and s2_current;
     ACK_3 <= (not s1_current) and s2_current;

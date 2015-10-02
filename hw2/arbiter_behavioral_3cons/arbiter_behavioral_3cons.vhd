@@ -6,18 +6,12 @@
 -- Design Name: 
 -- Module Name: arbiter_behavioral_3cons - Behavioral
 -- Project Name: 
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
 -- 
 -- Revision:
 -- Revision 0.01 - File Created
 -- Additional Comments:
 -- 
 ----------------------------------------------------------------------------------
-
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.all;

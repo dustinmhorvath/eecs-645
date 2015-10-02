@@ -50,7 +50,6 @@
         <Option Name="TopModule" Val="arbiter_structural_2cons_highPri_tb"/>
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TopAutoSet" Val="TRUE"/>
-        <Option Name="SimMode" Val="post-implementation"/>
         <Option Name="SrcSet" Val="sources_1"/>
         <Option Name="xsim.simulate.runtime" Val="400ns"/>
       </Config>

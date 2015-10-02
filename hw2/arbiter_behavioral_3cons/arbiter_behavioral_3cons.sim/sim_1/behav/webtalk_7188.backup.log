@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Webtalk v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Oct 01 22:10:34 2015
+# Process ID: 1516
+# Log file: C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_3cons/arbiter_behavioral_3cons.sim/sim_1/behav/webtalk.log
+# Journal file: C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_3cons/arbiter_behavioral_3cons.sim/sim_1/behav\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_3cons/arbiter_behavioral_3cons.sim/sim_1/behav/xsim.dir/arbiter_behavioral_3cons_tb_behav/webtalk/xsim_webtalk.tcl -notrace
+webtalk_transmit: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 61.355 ; gain = 0.012
+
+    while executing
+"webtalk_transmit -clientid 2889573745 -regid "" -xml C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_3cons/arbiter_behavioral_3cons.sim/sim_..."
+    (file "C:/Users/dhorvath/git/eecs/eecs645/hw2/arbiter_behavioral_3cons/arbiter_behavioral_3cons.sim/sim_1/behav/xsim.dir/arbiter_behavioral_3cons_tb_behav/we..." line 41)
+INFO: [Common 17-206] Exiting Webtalk at Thu Oct 01 22:10:40 2015...

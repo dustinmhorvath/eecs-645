@@ -6,18 +6,10 @@
 -- Design Name: arbiter_behavioral_2cons_lowPri_tb
 -- Module Name: arbiter_behavioral_2cons_lowPri_tb - Behavioral
 -- Project Name: EECS645 Homework 2
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
--- 
 -- Revision: See latest git commit at http://git.nichnologist.net/dhorvath/eecs/tree/master/eecs645/hw2
 -- Additional Comments: None
 -- 
 ----------------------------------------------------------------------------------
-
-
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

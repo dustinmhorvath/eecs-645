@@ -6,17 +6,11 @@
 -- Design Name: arbiter_structural_2cons_highPri_tb
 -- Module Name: arbiter_structural_2cons_highPri_tb - Structural
 -- Project Name: EECS645 Homework 2
--- Target Devices: 
--- Tool Versions: 
--- Description: 
--- 
--- Dependencies: 
 -- 
 -- Revision: See latest git commit at http://git.nichnologist.net/dhorvath/eecs/tree/master/eecs645/hw2
 -- Additional Comments: None
 -- 
 ----------------------------------------------------------------------------------
-
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
