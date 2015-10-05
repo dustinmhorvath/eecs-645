@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Mon Oct 05 11:22:37 2015
+# Process ID: 5064
+# Log file: C:/Users/dhorvath/git/eecs/eecs645/HW03_source_files/02_MIPS_Data_Memory/HW03_El-Araby_datamemory/HW03_El-Araby_datamemory.runs/synth_1/DataMem.vds
+# Journal file: C:/Users/dhorvath/git/eecs/eecs645/HW03_source_files/02_MIPS_Data_Memory/HW03_El-Araby_datamemory/HW03_El-Araby_datamemory.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source DataMem.tcl -notrace
