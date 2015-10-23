@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Thu Oct 22 20:48:40 2015
+# Process ID: 6592
+# Log file: C:/Users/dhorvath/git/eecs/eecs645/03_MIPS_Instruction_Memory/im_proj/im_proj.runs/synth_1/IM.vds
+# Journal file: C:/Users/dhorvath/git/eecs/eecs645/03_MIPS_Instruction_Memory/im_proj/im_proj.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source IM.tcl -notrace
