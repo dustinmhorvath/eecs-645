@@ -1,0 +1,55 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.2 (win64) Build 1266856 Fri Jun 26 16:35:25 MDT 2015
+| Date         : Fri Oct 30 11:17:59 2015
+| Host         : dustin-asus running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file ALU_control_sets_placed.rpt
+| Design       : ALU
+| Device       : xc7a200t
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Flip-Flop Distribution
+3. Detailed Control Set Information
+
+1. Summary
+----------
+
++-------------------------------------------------------------------+-------+
+|                               Status                              | Count |
++-------------------------------------------------------------------+-------+
+| Number of unique control sets                                     |     2 |
+| Minimum Number of register sites lost to control set restrictions |     8 |
++-------------------------------------------------------------------+-------+
+
+
+2. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               1 |            1 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              31 |           10 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+3. Detailed Control Set Information
+-----------------------------------
+
++--------------+---------------+-------------------------------------+------------------+----------------+
+| Clock Signal | Enable Signal |           Set/Reset Signal          | Slice Load Count | Bel Load Count |
++--------------+---------------+-------------------------------------+------------------+----------------+
+|  n_0_78_BUFG |               |                                     |                1 |              1 |
+|  n_0_78_BUFG |               | ALU_result_internal_reg[31]_i_2_n_1 |               10 |             31 |
++--------------+---------------+-------------------------------------+------------------+----------------+
+
+

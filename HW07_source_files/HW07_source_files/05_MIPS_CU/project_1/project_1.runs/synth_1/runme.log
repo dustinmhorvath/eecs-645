@@ -1,0 +1,240 @@
+
+*** Running vivado
+    with args -log Main_Control_Unit.vds -m64 -mode batch -messageDb vivado.pb -notrace -source Main_Control_Unit.tcl
+
+WARNING: Default location for XILINX_VIVADO_HLS not found: 
+
+****** Vivado v2015.2 (64-bit)
+  **** SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+  **** IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source Main_Control_Unit.tcl -notrace
+Command: synth_design -top Main_Control_Unit -part xc7a200tfbg676-2
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a200t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a200t'
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 244.980 ; gain = 68.527
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Main_Control_Unit' [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'Main_Control_Unit' (1#1) [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:22]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 279.223 ; gain = 102.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 279.223 ; gain = 102.770
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a200tfbg676-2
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 279.223 ; gain = 102.770
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a200tfbg676-2
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RegDst" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MemToReg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Branch" won't be mapped to RAM because it is too sparse
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:38]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrc_reg' [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:32]
+WARNING: [Synth 8-327] inferring latch for variable 'Branch_reg' [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:37]
+WARNING: [Synth 8-327] inferring latch for variable 'Jump_reg' [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'MemToReg_reg' [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:33]
+WARNING: [Synth 8-327] inferring latch for variable 'MemWrite_reg' [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:36]
+WARNING: [Synth 8-327] inferring latch for variable 'RegDst_reg' [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:31]
+WARNING: [Synth 8-327] inferring latch for variable 'RegWrite_reg' [C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/mips_cu.vhd:34]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 295.750 ; gain = 119.297
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Main_Control_Unit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+	   6 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 740 (col length:100)
+BRAMs: 730 (col length: RAMB18 100 RAMB36 50)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 449.781 ; gain = 273.328
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 451.063 ; gain = 274.609
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 451.063 ; gain = 274.609
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT6 |    13|
+|2     |LD   |     6|
+|3     |LDCP |     3|
+|4     |IBUF |     6|
+|5     |OBUF |    10|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |    38|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 459.375 ; gain = 267.379
+Synthesis Optimization Complete : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 459.375 ; gain = 282.922
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 15 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  LD => LDCE: 6 instances
+  LDCP => LDCP (GND, LUT3, LUT3, LDCE, VCC): 3 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+16 Infos, 8 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 527.859 ; gain = 337.266
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.072 . Memory (MB): peak = 527.859 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Wed Nov 04 14:59:17 2015...

@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Wed Nov 04 14:59:05 2015
+# Process ID: 4104
+# Log file: C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/project_1/project_1.runs/synth_1/Main_Control_Unit.vds
+# Journal file: C:/Users/dhorvath/git/eecs/eecs645/HW07_source_files/HW07_source_files/05_MIPS_CU/project_1/project_1.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Main_Control_Unit.tcl -notrace

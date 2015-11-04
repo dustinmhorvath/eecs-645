@@ -6,8 +6,8 @@ USE ieee.std_logic_signed.all;
 ENTITY ALU IS
    PORT( 
       A           : IN     std_logic_vector (31 DOWNTO 0);
-      ALU_control : IN     std_logic_vector (3 DOWNTO 0);
       B           : IN     std_logic_vector (31 DOWNTO 0);
+      ALU_control : IN     std_logic_vector (3 DOWNTO 0);
       ALU_result  : OUT    std_logic_vector (31 DOWNTO 0);
       zero        : OUT    std_logic
    );
@@ -35,7 +35,6 @@ BEGIN
    -- insert your design here --
     compute : process(A, B, ALU_control)
     BEGIN
-    
         if ALU_control = "0000" then
             ALU_result_internal <= A and B;
             end if;
@@ -53,17 +52,13 @@ BEGIN
                 ALU_result_internal <= std_logic_vector(conv_std_logic_vector(1,32));
             else
                 ALU_result_internal <= std_logic_vector(conv_std_logic_vector(0,32));
-            
                 end if;
             end if;
         if ALU_control = "1100" then
             ALU_result_internal <= A nor B;
             end if;
-            
-        
-    
-    
     end process compute;
+    
     
     zero_compute : process(ALU_result_internal)
         BEGIN
