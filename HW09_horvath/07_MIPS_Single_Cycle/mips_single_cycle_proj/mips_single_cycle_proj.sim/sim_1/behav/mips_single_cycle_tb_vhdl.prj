@@ -1,0 +1,6 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  "../../../../design_files/mips_single_cycle_struct.vhd"
+vhdl xil_defaultlib  "../../../../simulation_files/mips_single_cycle_tb.vhd"
+
+# Do not sort compile order
+nosort

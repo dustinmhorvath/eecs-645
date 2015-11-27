@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/01_My_KU_Material/KU_Material/KU_Academics/Teaching/01_EECS_645/01_EECS_645_Fall2015/Homework/HW09 - MIPS/HW09_source_files/07_MIPS_Single_Cycle/design_files/mips_single_cycle_struct.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mips_single_cycle
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/01_My_KU_Material/KU_Material/KU_Academics/Teaching/01_EECS_645/01_EECS_645_Fall2015/Homework/HW09 - MIPS/HW09_source_files/07_MIPS_Single_Cycle/simulation_files/mips_single_cycle_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity mips_single_cycle_tb

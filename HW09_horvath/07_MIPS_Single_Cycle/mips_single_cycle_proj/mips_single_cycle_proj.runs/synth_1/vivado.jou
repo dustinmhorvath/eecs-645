@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Fri Nov 27 11:26:41 2015
+# Process ID: 1428
+# Log file: C:/Users/dhorvath/git/eecs/eecs645/HW09_source_files/07_MIPS_Single_Cycle/mips_single_cycle_proj/mips_single_cycle_proj.runs/synth_1/mips_single_cycle.vds
+# Journal file: C:/Users/dhorvath/git/eecs/eecs645/HW09_source_files/07_MIPS_Single_Cycle/mips_single_cycle_proj/mips_single_cycle_proj.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source mips_single_cycle.tcl -notrace
